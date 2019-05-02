@@ -650,8 +650,8 @@ var alamode = {
               fillColor: '#ee3333',//d[colorColumn],
               strokeColor: '#ee3333',
               fillOpacity: 0.8,
-              scale: 10,
-              strokeWidth: 1
+              scale: 6,
+              strokeWeight: 2
             }
           }
           var marker = new google.maps.Marker({
