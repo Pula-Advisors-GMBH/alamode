@@ -656,7 +656,7 @@ var alamode = {
               strokeColor: #000,
               fillOpacity: 0.8,
               scale: iconSize,
-              strokeWeight: 1
+              strokeWeight: Math.round(iconSize/4)
             }
           }
           var marker = new google.maps.Marker({
