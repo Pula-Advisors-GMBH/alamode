@@ -590,6 +590,7 @@ var alamode = {
     var latColumn = o["lat_column"],
         lngColumn = o["lng_column"],
         colorColumn = o["color_column"],
+        sizeColumn = o["size_column"],
         queryName = o["query_name"],
         apiKey = o["google_maps_api_key"],
         // Optional
@@ -645,13 +646,17 @@ var alamode = {
 
           var icon
           if(colorColumn) {
+            var iconSize = 6;
+            if(sizeColumn) {
+              iconSize = d[sizeColumn];
+            }
             icon = {
               path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
               fillColor: d[colorColumn],
-              strokeColor: d[colorColumn],
+              strokeColor: #000,
               fillOpacity: 0.8,
-              scale: 6,
-              strokeWeight: 2
+              scale: iconSize,
+              strokeWeight: 1
             }
           }
           var marker = new google.maps.Marker({
