@@ -647,8 +647,8 @@ var alamode = {
           if(colorColumn) {
             icon = {
               path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
-              fillColor: '#ee3333',//d[colorColumn],
-              strokeColor: '#ee3333',
+              fillColor: d[colorColumn],
+              strokeColor: d[colorColumn],
               fillOpacity: 0.8,
               scale: 6,
               strokeWeight: 2
