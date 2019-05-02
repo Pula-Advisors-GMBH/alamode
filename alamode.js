@@ -646,9 +646,12 @@ var alamode = {
           var icon
           if(colorColumn) {
             icon = {
-              path: google.maps.SymbolPath.CIRCLE,
+              path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
               fillColor: '#ee3333',//d[colorColumn],
-              scale: 10
+              strokeColor: '#ee3333',
+              fillOpacity: 0.8,
+              scale: 10,
+              strokeWidth: 1
             }
           }
           var marker = new google.maps.Marker({
