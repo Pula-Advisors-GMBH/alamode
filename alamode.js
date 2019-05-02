@@ -653,7 +653,7 @@ var alamode = {
             icon = {
               path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
               fillColor: d[colorColumn],
-              strokeColor: #000,
+              strokeColor: '#000',
               fillOpacity: 0.8,
               scale: iconSize,
               strokeWeight: Math.round(iconSize/4)
