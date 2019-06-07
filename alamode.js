@@ -590,6 +590,7 @@ var alamode = {
     var latColumn = o["lat_column"],
         lngColumn = o["lng_column"],
         colorColumn = o["color_column"],
+        iconColumn = o["icon_column"],
         sizeColumn = o["size_column"],
         queryName = o["query_name"],
         apiKey = o["google_maps_api_key"],
@@ -645,7 +646,15 @@ var alamode = {
           }
 
           var icon
-          if(colorColumn) {
+	  if(iconColumn) {
+		icon = {
+			url: 'https://Pula-Advisors-GMBH.github.io/alamode/images/' +  d[iconColumn]+ '.png',
+			size: new google.maps.Size(40, 40),
+			origin: new google.maps.Point(0, 0),
+			anchor: new google.maps.Point(0, 32)
+		}
+	  }
+	  else if(colorColumn) {
             var iconSize = 6;
             if(sizeColumn) {
               iconSize = d[sizeColumn];
