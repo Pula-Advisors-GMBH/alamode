@@ -648,8 +648,8 @@ var alamode = {
 	  if(iconColumn) {
 		  var iconWidth, iconHeight;
 		  if(sizeColumn) {
-			  iconWidth = 40 * (sizeColumn/10);
-			  iconHeight = 60 * (sizeColumn/10);
+			  iconWidth = 40 * (o[sizeColumn]/10);
+			  iconHeight = 60 * (o[sizeColumn]/10);
 		  }
 		  else {
 			iconWidth = 40;
