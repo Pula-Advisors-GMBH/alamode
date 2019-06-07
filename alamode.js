@@ -646,11 +646,21 @@ var alamode = {
 
           var icon
 	  if(iconColumn) {
+		  var iconWidth, iconHeight;
+		  if(sizeColumn) {
+			  iconWidth = 40 * (sizeColumn/10);
+			  iconHeight = 60 * (sizeColumn/10);
+		  }
+		  else {
+			iconWidth = 40;
+			iconHeight = 60;
+		  }
 		icon = {
 			url: 'https://Pula-Advisors-GMBH.github.io/alamode/images/' +  d[iconColumn]+ '.png',
 			size: new google.maps.Size(40, 60),
 			origin: new google.maps.Point(0, 0),
-			anchor: new google.maps.Point(0, 20)
+			anchor: new google.maps.Point(0, 20),
+			scaledSize: new google.maps.Size(iconWidth, iconHeight)
 		}
 	  }
 	  else if(colorColumn) {
