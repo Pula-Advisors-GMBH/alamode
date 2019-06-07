@@ -648,9 +648,9 @@ var alamode = {
 	  if(iconColumn) {
 		icon = {
 			url: 'https://Pula-Advisors-GMBH.github.io/alamode/images/' +  d[iconColumn]+ '.png',
-			size: new google.maps.Size(40, 40),
+			size: new google.maps.Size(40, 60),
 			origin: new google.maps.Point(0, 0),
-			anchor: new google.maps.Point(0, 32)
+			anchor: new google.maps.Point(0, 20)
 		}
 	  }
 	  else if(colorColumn) {
