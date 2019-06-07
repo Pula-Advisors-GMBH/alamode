@@ -632,7 +632,6 @@ var alamode = {
         };
 
         var map = new google.maps.Map(document.getElementById(id), myOptions );
-	console.log("Test - about to add markers");
 
         data.forEach(function(d) {
 
