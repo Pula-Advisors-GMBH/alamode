@@ -619,7 +619,8 @@ var alamode = {
       .attr("id",id)
       .style("height",mapHeight + "px")
 
-    jQuery.getScript("https://maps.googleapis.com/maps/api/js?key=" + apiKey, function() {
+    window.googleMapsApiLoader = window.googleMapsApiLoader || jQuery.getScript("https://maps.googleapis.com/maps/api/js?key=" + apiKey);
+    window.googleMapsApiLoader.then(function() {
 
       initMap()
 
